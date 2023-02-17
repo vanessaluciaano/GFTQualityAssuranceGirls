@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>DIOP</projectKey>
+    <exportDate>2023-02-17 03:50:18 UTC</exportDate>
+    <folders>
+        <folder fullPath="Cadastro de usuário não realizado" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="80309906" key="DIOP-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Vanessa Luciano</createdBy>
+            <createdOn>2023-02-17 01:21:28 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>DIOP-3</key>
+                    <summary><![CDATA[Como usuário desejo preencher o formulário para criação de conta na loja virtual]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cadastrar usuário com sucesso]]></name>
+            <objective><![CDATA[<ul><li>Este caso de uso permite que novos usu&aacute;rios possam se cadastrar no sistema para realizar opera&ccedil;&otilde;es de forma autenticada.</li></ul>]]></objective>
+            <owner>63838d158fd2d2d5f12f0dd6</owner>
+            <precondition><![CDATA[<strong>Caminho no sistema:</strong><br /><ul><li>P&aacute;gina inicial &gt; Cadastre-se</li></ul><br /><br />]]></precondition>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[<ol><li>O usu&aacute;rio preencher os campos: Username, nome completo, data de nascimento, e-mail, senha e confirma&ccedil;&atilde;o de senha.</li><li>O usu&aacute;rio clica no bot&atilde;o 'Criar conta'.</li></ol>]]></description>
+                        <expectedResult><![CDATA[<ol><li>O sistema exibe uma mensagem de sucesso. O usu&aacute;rio &eacute; cadastrado no site.</li></ol>]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="80310877" key="DIOP-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Vanessa Luciano</createdBy>
+            <createdOn>2023-02-17 02:38:48 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>DIOP-5</key>
+                    <summary><![CDATA[Como cliente desejo acessar o site da loja e adicionar itens no carrinho afim de comprar os produtos desejados]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente adiciona itens ao carrinho de compras]]></name>
+            <objective><![CDATA[Adicionar itens ao carrinho de compras afim de realizar compras no sistema]]></objective>
+            <owner>63838d158fd2d2d5f12f0dd6</owner>
+            <precondition><![CDATA[<ul><li>Usu&aacute;rio ter realizado um cadastro no sistema.&nbsp;</li><li>Usu&aacute;rio ter realizado autentica&ccedil;&atilde;o no sistema.&nbsp;</li></ul><h3><a href="https://github.com/carolsprak/publicazo/wiki/UC004#caminho-no-sistema"></a>Caminho no sistema:</h3><ul><li>P&aacute;gina inicial &gt; Entrar&nbsp;</li></ul>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[A fim de comprar um produto na loja online
+Como cliente
+Eu quero  visualizar o catalogo de produtos
+Para adicionar o item desejado ao meu carrinho de comrpras
+
+Given que determinado cliente logado
+And na página de produtos no site
+When o usuário visualiza o produto desejado 
+And clica no botão Add to cart
+Then o produto é adicionado ao carrinho]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="80311391" key="DIOP-T6">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Vanessa Luciano</createdBy>
+            <createdOn>2023-02-17 03:01:52 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>DIOP-5</key>
+                    <summary><![CDATA[Como cliente desejo acessar o site da loja e adicionar itens no carrinho afim de comprar os produtos desejados]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente gerencia itens no carrinho de compras]]></name>
+            <objective><![CDATA[Garantir que o usu&aacute;rio consiga remover os itens do carrinho]]></objective>
+            <owner>63838d158fd2d2d5f12f0dd6</owner>
+            <precondition><![CDATA[<h3>Pr&eacute;-condi&ccedil;&otilde;es</h3><ul><li>Usu&aacute;rio ter realizado um cadastro no sistema</li><li>Usu&aacute;rio ter realizado autentica&ccedil;&atilde;o no sistema</li><li>Usu&aacute;rio ter adicionado itens no carrinho</li></ul><h3><a href="https://github.com/carolsprak/publicazo/wiki/UC005#caminho-no-sistema"></a>Caminho no sistema:</h3><ul><li>P&aacute;gina inicial &gt; Entrar &gt; Carrinho de compras</li></ul>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[A fim de comprar um produto na loja online
+Como cliente
+Eu quero  acessar o carrinho de compras
+Para gerenciar os itens adicionados
+
+Given que determinado cliente logado
+And na página de carrinho de compras
+When o usuário deseja remover um produto do carrinho
+And clica no botão Remove
+Then o produto é removido do carrinho]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="80310018" key="DIOP-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Vanessa Luciano</createdBy>
+            <createdOn>2023-02-17 01:28:08 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Cadastro de usuário não realizado]]></folder>
+            <issues>
+                <issue>
+                    <key>DIOP-3</key>
+                    <summary><![CDATA[Como usuário desejo preencher o formulário para criação de conta na loja virtual]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[O usuário não preenche os campos obrigatórios]]></name>
+            <objective><![CDATA[Garantir que os campos sejas preenchidos e o usu&aacute;rio seja cadastrado com seguran&ccedil;a no sistema.]]></objective>
+            <owner>63838d158fd2d2d5f12f0dd6</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[<ol><li>O usu&aacute;rio n&atilde;o preenche nenhum campo.</li><li>O usu&aacute;rio clica no bot&atilde;o 'Cadastrar'.</li></ol>]]></description>
+                        <expectedResult><![CDATA[<ol><li>O sistema exibe uma mensagem de erro. O usu&aacute;rio n&atilde;o &eacute; cadastrado no sistema.</li></ol><h3><a href="https://github.com/carolsprak/publicazo/wiki/UC001#fluxo-de-exce%C3%A7%C3%A3o-2"></a></h3>]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="80310163" key="DIOP-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Vanessa Luciano</createdBy>
+            <createdOn>2023-02-17 01:32:32 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Cadastro de usuário não realizado]]></folder>
+            <issues>
+                <issue>
+                    <key>DIOP-3</key>
+                    <summary><![CDATA[Como usuário desejo preencher o formulário para criação de conta na loja virtual]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[O usuário preenche senhas divirgentes]]></name>
+            <objective><![CDATA[Garantir que os campos senha e confirma&ccedil;&atilde;o de senha sejam preenchidos corretamente e o usu&aacute;rio seja cadastrado com seguran&ccedil;a no sistema.]]></objective>
+            <owner>63838d158fd2d2d5f12f0dd6</owner>
+            <precondition><![CDATA[<h3>Caminho no sistema:</h3><ul><li>P&aacute;gina inicial &gt; Cadastre-se</li></ul>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[<ol><li>O usu&aacute;rio preenche senha e confirma&ccedil;&atilde;o de senha divergentes.</li><li>O usu&aacute;rio clica no bot&atilde;o 'Cadastrar'.</li></ol>]]></description>
+                        <expectedResult><![CDATA[<ol><li>O sistema exibe uma mensagem de erro. O usu&aacute;rio n&atilde;o &eacute; cadastrado no sistema.</li></ol>]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
